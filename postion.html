@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Different Types of Positioning in CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* For scrolling */
+        }
+
+        .static-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #e0e0e0;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #999;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top:400px;
+            left: 50px;
+            background-color: #d0d0d0;
+            padding: 20px;
+            border: 1px solid #666;
+        }
+
+        .fixed-box {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #c0c0c0;
+            padding: 20px;
+            border: 1px solid #333;
+            width: 150px;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: #b0b0b0;
+            padding: 20px;
+            border: 1px solid #000;
+            margin-top: 200px; /* So it's not in the viewport initially */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using Different Types of Positioning in CSS</h1>
+
+    <div class="static-box">
+        <h2>Static Position</h2>
+        <p>This box is statically positioned. It follows the normal document flow.</p>
+    </div>
+
+    <div class="relative-box">
+        <h2>Relative Position</h2>
+        <p>This box is relatively positioned. It is moved 20px down and to the right from its original position.</p>
+    </div>
+
+    <div class="absolute-box">
+        <h2>Absolute Position</h2>
+        <p>This box is absolutely positioned. It is placed 100px from the top and 50px from the left of its nearest positioned ancestor or the viewport.</p>
+    </div>
+
+    <div class="fixed-box">
+        <h2>Fixed Position</h2>
+        <p>This box is fixed to the top right of the viewport. It stays there even when the page is scrolled.</p>
+    </div>
+
+    <div class="sticky-box">
+        <h2>Sticky Position</h2>
+        <p>This box is sticky. It starts relative, but sticks to the top of the viewport as you scroll past it.</p>
+    </div>
+
+</body>
+</html>
