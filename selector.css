@@ -1,0 +1,38 @@
+/* External CSS (styles.css) */
+#external-style {
+    color: red;
+    text-decoration: underline;
+}
+
+.class-selector {
+    color: orange;
+    font-style: italic;
+}
+
+.parent > .child {
+    color: purple;
+    font-size: 1.2em;
+}
+
+.pseudo-class-selector:hover {
+    color: brown;
+    font-size: 1.5em;
+}
+
+.pseudo-element-selector::before {
+    content: "Before Text - ";
+    color: teal;
+}
+
+.pseudo-element-selector::after {
+    content: " - After Text";
+    color: teal;
+}
+
+.sibling-1 + .sibling-2 {
+    background-color: yellow;
+}
+
+.sibling-1 ~ .sibling-3 {
+    background-color: lightblue;
+}

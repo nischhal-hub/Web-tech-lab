@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demonstration</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="selector.css">
+    <style>
+        /* Internal CSS */
+        .internal-style {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: green; text-align: center;">Using Different Ways of Inserting CSS</h1>
+
+    <p class="internal-style">This paragraph uses internal CSS.</p>
+    
+    <p id="external-style">This paragraph uses external CSS.</p>
+
+    <p class="class-selector">This paragraph uses a class selector.</p>
+
+    <p id="id-selector">This paragraph uses an ID selector.</p>
+
+    <div class="parent">
+        <p class="child">This is a child element using a child selector.</p>
+    </div>
+
+    <p class="pseudo-class-selector">Hover over this text to see a pseudo-class selector in action.</p>
+
+    <p class="pseudo-element-selector">This text uses a pseudo-element selector ::before and ::after.</p>
+    
+    <p class="sibling-1">This paragraph is the first sibling.</p>
+    <p class="sibling-2">This paragraph is the second sibling and is styled using the adjacent sibling selector.</p>
+    <p class="sibling-3">This paragraph is styled using the general sibling selector.</p>
+</body>
+</html>
