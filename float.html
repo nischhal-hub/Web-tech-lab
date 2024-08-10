@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Float and Clear Properties in CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .container {
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        .box {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h1, p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using Float and Clear in CSS</h1>
+
+    <div class="container">
+        <div class="box left">
+            <h2>Left Float</h2>
+            <p>This box is floated to the left.</p>
+        </div>
+
+        <div class="box right">
+            <h2>Right Float</h2>
+            <p>This box is floated to the right.</p>
+        </div>
+
+        <div class="clear"></div>
+        
+        <p>
+            After the "clear: both;" is applied, this paragraph appears below both of the floated boxes. The clear property ensures that no floating elements are beside it, allowing it to take up the full width of the container.
+        </p>
+    </div>
+
+</body>
+</html>
