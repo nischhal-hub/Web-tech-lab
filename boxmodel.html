@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <style>
+        .box-model {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid blue;
+            margin: 30px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the CSS Box Model</h1>
+
+    <div class="box-model">
+        This is a `div` element with content, padding, border, and margin applied.
+    </div>
+
+    <p>The total width of the box is calculated as: 
+        200px (width) + 40px (padding) + 10px (border) + 60px (margin) = 310px</p>
+    <p>The total height of the box is calculated as: 
+        100px (height) + 40px (padding) + 10px (border) + 60px (margin) = 210px</p>
+
+</body>
+</html>
