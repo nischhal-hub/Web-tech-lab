@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design with Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header, nav, main, footer {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+
+        header {
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        main {
+            background: #e2e2e2;
+            padding: 20px;
+        }
+
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Default Styles (Desktop) */
+        @media screen and (min-width: 1024px) {
+            body {
+                background-color: #fff;
+            }
+
+            main {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            article {
+                flex: 3;
+            }
+
+            aside {
+                flex: 1;
+                background: #ddd;
+                padding: 15px;
+            }
+        }
+
+        /* Tablet View */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            body {
+                background-color: #f9f9f9;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            aside {
+                margin-top: 20px;
+            }
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 767px) {
+            body {
+                background-color: #efefef;
+            }
+
+            header, nav, main, footer {
+                padding: 10px;
+                margin: 5px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            main, aside {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Web Design Example</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Main Content Area</h2>
+            <p>This is the main content of the page. It will adjust its width based on the screen size.</p>
+        </article>
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is the sidebar content. It will move below the main content on smaller screens.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+
+</body>
+</html>
